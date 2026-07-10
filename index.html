@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>K — a sovereign personal agent</title>
+<meta name="description" content="K runs on your machine, holds your life's record locally, and is evaluated against one thing: the footprint of a human flourishing. Advisory by default. Silent by default. AGPL-3.0.">
+<meta property="og:title" content="K — a sovereign personal agent">
+<meta property="og:description" content="Your attention is the currency. The eval is your life's footprint. You are the server.">
+<style>
+  :root{
+    --ink:#0b0b0c; --panel:#131315; --hair:rgba(255,255,255,.09);
+    --t1:rgba(255,255,255,.87); --t2:rgba(255,255,255,.64); --t3:rgba(255,255,255,.48); --t4:rgba(255,255,255,.30);
+    --mono:ui-monospace,'SF Mono',SFMono-Regular,Menlo,monospace;
+    --sans:-apple-system,BlinkMacSystemFont,'Inter',sans-serif;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{background:var(--ink);color:var(--t1);font-family:var(--sans);line-height:1.65;-webkit-font-smoothing:antialiased}
+  .col{max-width:760px;margin:0 auto;padding:0 24px}
+  a{color:var(--t1);text-decoration:none;border-bottom:1px solid var(--hair)}
+  @media (hover:hover) and (pointer:fine){
+    a{transition:border-bottom-color 150ms ease-out,color 150ms ease-out}
+    a:hover{border-bottom-color:var(--t2)}
+    nav a:hover{color:var(--t1)}
+  }
+  a:focus-visible,nav a:focus-visible{outline:1px solid var(--t3);outline-offset:3px;border-radius:2px}
+  html{scroll-behavior:smooth;scroll-padding-top:64px}
+  @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+  nav{position:sticky;top:0;background:rgba(11,11,12,.86);backdrop-filter:blur(12px);border-bottom:1px solid var(--hair);z-index:9}
+  nav .col{display:flex;gap:22px;align-items:baseline;padding-top:14px;padding-bottom:14px}
+  nav b{font-family:var(--mono);font-weight:600;letter-spacing:.02em}
+  nav a{font-family:var(--mono);font-size:12.5px;color:var(--t3);border:none}
+  header.col{padding:clamp(120px,22vh,220px) 24px clamp(96px,16vh,160px)}
+  h1{font-size:clamp(30px,5.4vw,44px);font-weight:650;letter-spacing:-.02em;line-height:1.15;max-width:15em}
+  .sub{margin-top:32px;color:var(--t2);font-size:17.5px;max-width:36em}
+  .meta{margin-top:44px;font-family:var(--mono);font-size:12.5px;color:var(--t3)}
+  section{padding:56px 0;border-top:1px solid var(--hair)}
+  h2{font-family:var(--mono);font-size:13px;font-weight:600;letter-spacing:.08em;color:var(--t3);text-transform:lowercase;margin-bottom:26px}
+  h3{font-size:16px;font-weight:600;margin:30px 0 8px}
+  p{color:var(--t2);margin:10px 0;max-width:44em}
+  p b,li b{color:var(--t1);font-weight:600}
+  ul{list-style:none}
+  li{color:var(--t2);padding:7px 0;border-bottom:1px solid var(--hair)}
+  li:last-child{border:none}
+  pre{background:var(--panel);border:1px solid var(--hair);border-radius:3px;padding:18px 20px;overflow-x:auto;font-family:var(--mono);font-size:12.8px;line-height:1.7;color:var(--t2);margin:16px 0}
+  code{font-family:var(--mono);font-size:.92em;color:var(--t1)}
+  table{width:100%;border-collapse:collapse;font-size:14px;margin:16px 0}
+  th{font-family:var(--mono);font-size:11.5px;font-weight:500;color:var(--t4);text-align:left;text-transform:lowercase;letter-spacing:.06em;padding:8px 14px 8px 0;border-bottom:1px solid var(--hair)}
+  td{color:var(--t2);padding:9px 14px 9px 0;border-bottom:1px solid var(--hair);vertical-align:top}
+  td:first-child{font-family:var(--mono);font-size:12.8px;color:var(--t1);white-space:nowrap}
+  .law{display:grid;grid-template-columns:2.2em 1fr;gap:0 8px;padding:12px 0;border-bottom:1px solid var(--hair)}
+  .law i{font-family:var(--mono);font-style:normal;color:var(--t4);font-size:13px;padding-top:2px}
+  .law b{display:block;font-weight:600;color:var(--t1)}
+  .law span{color:var(--t2);font-size:14.5px}
+  footer{padding:56px 0 88px;border-top:1px solid var(--hair);font-family:var(--mono);font-size:12.5px;color:var(--t3)}
+  footer a{color:var(--t3)}
+  .quiet{color:var(--t4)}
+</style>
+</head>
+<body>
+<nav><div class="col">
+  <b>k</b>
+  <a href="#principles">principles</a>
+  <a href="#architecture">architecture</a>
+  <a href="#spec">system spec</a>
+  <a href="#use">how to use</a>
+  <a href="#voice">voice</a>
+  <a href="https://github.com/withdhyan/k-daemon">github</a>
+</div></nav>
+
+<header class="col">
+  <h1>A personal agent whose eval is your life, not your engagement.</h1>
+  <p class="sub">K runs on your machine, holds your life's record locally, and stages
+  recommendations a human decides on. It measures itself against one thing: did attention go
+  where you meant it to go, did decisions get acted on, did open loops resolve. A pleasant
+  system that never resolves anything is a failing system.</p>
+  <p class="meta">sovereign · advisory-first · silence-default · agpl-3.0 · you are the server</p>
+</header>
+
+<section id="principles"><div class="col">
+  <h2>principles</h2>
+  <div class="law"><i>1</i><div><b>sovereignty is structural</b><span>the life record lives in local JSON; sensitive reasoning routes only to model lanes you control; there is no telemetry; the data directory is uncommittable by construction.</span></div></div>
+  <div class="law"><i>2</i><div><b>attention economics</b><span>every interruption has a class (ambient / peripheral / focal), every category has a daily budget, one slot arbitrates what may speak. over-budget insight waits.</span></div></div>
+  <div class="law"><i>3</i><div><b>advisory-first autonomy</b><span>acting requires an explicit grant; everything else is a staged recommendation with a named undo.</span></div></div>
+  <div class="law"><i>4</i><div><b>silence-default</b><span>nothing renders unless it changes what you do next. empty states say what silence means.</span></div></div>
+  <div class="law"><i>5</i><div><b>truth first, anti-glaze</b><span>no praise, no mirroring for agreement. missing data is named, never imputed. every rate carries its denominator.</span></div></div>
+  <div class="law"><i>6</i><div><b>consent-first senses</b><span>every data source starts OFF; unconfigured is a clean state. ingestion is dedup-idempotent and fail-soft.</span></div></div>
+  <div class="law"><i>7</i><div><b>a governed factory</b><span>K builds itself through plans, units, and lanes — but protected files integrate only through reviewed paths, and genuine decisions become cards for the human.</span></div></div>
+  <div class="law"><i>8</i><div><b>recognition over recall</b><span>essence inline, depth one gesture away.</span></div></div>
+  <div class="law"><i>9</i><div><b>honest instrumentation</b><span>the eval never fills missing data, never penalizes silence, and shows its own vitals to the human it measures for.</span></div></div>
+  <p style="margin-top:22px"><a href="PRINCIPLES.md">the full philosophy →</a></p>
+</div></section>
+
+<section id="architecture"><div class="col">
+  <h2>architecture</h2>
+  <pre>
+                       you (phone / ipad / web)
+                              │  tailnet or loopback · never a cloud
+                     ┌────────▼─────────┐
+                     │     k-daemon     │  node, no external services
+                     ├──────────────────┤
+   chat ─────────────▶ agent shell      │ sensitivity routing: sensitive turns
+   cadence ──────────▶ cadence engine   │ MUST take the sovereign lane
+   build cards ──────▶ build runner     │
+   mind verdicts ────▶ think / dream    │
+                     ├──────────────────┤
+                     │    substrate     │  local JSON: exposures · idea atoms
+                     │    (data/)       │  decisions · body vitals · outputs
+                     ├──────────────────┤
+      senses (in) ───▶ ingest adapters  │  wearables · notes · bookmarks
+      models (out) ──▶ reason lanes     │  sovereign (yours) + frontier (optional)
+                     └──────────────────┘</pre>
+
+  <h3>the loops</h3>
+  <table>
+    <tr><th>loop</th><th>cadence</th><th>what it does</th></tr>
+    <tr><td>chat</td><td>on demand</td><td>grounded conversation over your substrate; advisory tools held unless granted</td></tr>
+    <tr><td>cadence</td><td>continuous</td><td>the day as a now-instrument: blocks, lifecycle, recalibration, nudges under budget</td></tr>
+    <tr><td>think</td><td>background tick</td><td>themes, open loops, decision candidates from the substrate — surfaced for verdicts</td></tr>
+    <tr><td>dream</td><td>nightly</td><td>cross-conversation edges ("these two things keep meeting") as budgeted discovery cards</td></tr>
+    <tr><td>senses</td><td>~30 min</td><td>self-syncing ingestion (wearables, notes) — consent-first, dedup-idempotent, fail-soft</td></tr>
+    <tr><td>build</td><td>continuous</td><td>the factory: plans → coding lanes in worktrees → verify → integrate, gated by governance</td></tr>
+  </table>
+
+  <h3>governance physics</h3>
+  <p>The build runner is autonomous <em>until it isn't</em>: a <b>safety floor</b> (protected
+  files integrate only after human-reviewed diffs), <b>scope-drift</b> checks (a unit touching
+  files outside its declared scope halts), <b>decision cards</b> (genuine choices go to the
+  human, one tap each), and a <b>deploy gate</b> (daemon-affecting changes ship through an
+  intent/outcome handshake with rollback).</p>
+</div></section>
+
+<section id="spec"><div class="col">
+  <h2>system spec</h2>
+  <table>
+    <tr><th>component</th><th>spec</th></tr>
+    <tr><td>runtime</td><td>node ≥ 18, ESM, zero framework — one process, stdlib http</td></tr>
+    <tr><td>bind</td><td>loopback by default; a tailnet address if you want your devices on it. never 0.0.0.0</td></tr>
+    <tr><td>storage</td><td>local JSON under <code>data/</code> — append-mostly records with supersession, atomic writes, dedupe keys. no database server</td></tr>
+    <tr><td>model lanes</td><td>sovereign lane (your endpoint: ZDR openrouter, local ollama, or a CLI) + optional frontier lane. sensitivity classifier routes per turn; substrate context never leaves the sovereign lane</td></tr>
+    <tr><td>senses</td><td>wearable (WHOOP v2 OAuth, paced + 429-tolerant), notes, bookmarks, context dumps — each a routine with its own consent switch</td></tr>
+    <tr><td>attention budget</td><td>per-category daily caps (default: 3 cadence nudges, 2 body cues, 2 dreaming cards/night); over-cap queues ranked</td></tr>
+    <tr><td>wire contract</td><td><code>contracts/k-contract-fixture.json</code> generated from the live projectors; clients vendor it and fail tests on drift</td></tr>
+    <tr><td>eval</td><td>TWS per block, acted-decisions/week, dreaming hit-rate, body composites — separate and visible, never composited before calibration</td></tr>
+    <tr><td>tests</td><td>~830 hermetic node tests; suite green gates every integration</td></tr>
+    <tr><td>publishing</td><td>this repo is a fresh-history mirror of the private working repo — allowlist export through fail-closed gates (secret scan, identity lint, image ban)</td></tr>
+  </table>
+
+  <h3>api surface (daemon)</h3>
+  <table>
+    <tr><th>route</th><th>purpose</th></tr>
+    <tr><td>POST /api/chat</td><td>grounded chat, SSE stream, sovereign-floor routing</td></tr>
+    <tr><td>GET /api/cadence/day</td><td>the day snapshot: blocks, lifecycle, recalibration, nudges</td></tr>
+    <tr><td>POST /api/cadence/acts</td><td>block lifecycle (start/pause/complete/skip), TWS answers, wake-init</td></tr>
+    <tr><td>GET /api/build/state</td><td>plans, units, lanes — the factory's live state</td></tr>
+    <tr><td>POST /api/build/cards/answer</td><td>one-tap decisions</td></tr>
+    <tr><td>GET /api/artifacts/mind</td><td>think/dream outputs for verdicts</td></tr>
+    <tr><td>GET /api/body/summary · /cue-context</td><td>baselines, z-scores, staged protocols</td></tr>
+    <tr><td>GET /api/whoop/connect · /status</td><td>wearable OAuth + sync state</td></tr>
+  </table>
+</div></section>
+
+<section id="use"><div class="col">
+  <h2>how to use</h2>
+  <h3>1 · run the daemon</h3>
+  <pre>git clone https://github.com/withdhyan/k-daemon && cd k-daemon
+npm install
+cp .env.example .env.local        # choose your model lane(s)
+node daemon/server.mjs            # binds 127.0.0.1:3003</pre>
+
+  <h3>2 · choose your sovereign lane</h3>
+  <pre># .env.local — pick ONE
+OPENROUTER_API_KEY=...            # ZDR-only routing, data_collection: deny
+K_SOVEREIGN_PROVIDER=claude-cli   # or: pipe through a local CLI subscription
+K_MIND_MODEL_PROVIDER=ollama      # or: fully local for background synthesis</pre>
+  <p class="quiet">the sovereign lane is where anything personal reasons. the optional frontier
+  lane only ever sees turns the classifier deems non-sensitive — and never your substrate.</p>
+
+  <h3>3 · connect senses (each one is opt-in)</h3>
+  <pre>WHOOP_CLIENT_ID=...               # developer.whoop.com → create app
+WHOOP_CLIENT_SECRET=...
+WHOOP_REDIRECT_URI=http://localhost:3003/api/whoop/callback
+# then visit /api/whoop/connect once and approve</pre>
+
+  <h3>4 · pair the app</h3>
+  <p>Build <a href="https://github.com/withdhyan/k-app">k-app</a> (SwiftUI, iPad + iPhone) in
+  Xcode, point <code>cskBaseURL</code> at your daemon, and the five surfaces — cadence, chat,
+  build, mind, admin — come alive against your own record.</p>
+
+  <h3>5 · let it earn autonomy</h3>
+  <p>K starts advisory-everything. Grants are per-tool; the factory's floor and gates stay on
+  regardless. The right posture is the one it ships with: it asks before it acts, and it is
+  silent unless speaking changes your next move.</p>
+</div></section>
+
+<section id="voice"><div class="col">
+  <h2>voice</h2>
+  <p>K speaks like a quiet peer who did the work: plain prose, second person, terse, no
+  exclamation marks, numbers rounded to what a human can use. Pipeline scaffolding — ids,
+  template keys, raw floats — stays in payloads, never in copy.</p>
+  <pre>entity leads · a situation verb phrase · the evidence · the one ask
+
+"deep-work protocol is ready for a decision — 12 pieces of evidence ·
+ pick the next reversible step"</pre>
+  <p>The full voice chart and text patterns are a product primitive, published in
+  <a href="PRINCIPLES.md">PRINCIPLES.md</a>.</p>
+</div></section>
+
+<footer><div class="col">
+  k-daemon · <a href="https://github.com/withdhyan/k-daemon">source</a> ·
+  <a href="https://github.com/withdhyan/k-app">k-app</a> ·
+  <a href="PRINCIPLES.md">principles</a> ·
+  agpl-3.0 <span class="quiet">— a sovereignty tool should not be enclosable</span>
+</div></footer>
+</body>
+</html>

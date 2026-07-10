@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>ch.holonresear.cs-k-daemon</string>
+    <key>ProgramArguments</key>
+    <array>
+        <string>/Users/mfaz/.nvm/versions/node/v18.20.5/bin/node</string>
+        <string>.launch-tailnet.mjs</string>
+    </array>
+    <key>WorkingDirectory</key>
+    <string>/Users/mfaz/ai/cs-k</string>
+    <key>RunAtLoad</key>
+    <true/>
+    <key>KeepAlive</key>
+    <true/>
+    <key>ThrottleInterval</key>
+    <integer>10</integer>
+    <key>StandardOutPath</key>
+    <string>/Users/mfaz/ai/cs-k/.daemon-launchd.log</string>
+    <key>StandardErrorPath</key>
+    <string>/Users/mfaz/ai/cs-k/.daemon-launchd.log</string>
+</dict>
+</plist>

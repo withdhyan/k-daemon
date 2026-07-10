@@ -1,0 +1,1384 @@
+{
+  "kind": "KContractFixture",
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-09T00:00:00.000Z",
+  "source": "cs-k",
+  "contracts": {
+    "cadence": {
+      "daySnapshot": {
+        "ok": true,
+        "date": "2026-07-05",
+        "bandish": [
+          {
+            "id": "bandish_b470071140d6c79f3a7282df",
+            "kind": "Bandish",
+            "day": "2026-07-05",
+            "startAt": "2026-07-05T09:45:00.000Z",
+            "endAt": "2026-07-05T10:45:00.000Z",
+            "attentionMode": "converge",
+            "ring": "core",
+            "description": "Core build",
+            "type": "work",
+            "why": "the one thing that compounds",
+            "provenance": {
+              "surface": "cadence",
+              "lane": "deliberate"
+            },
+            "eventAt": "2026-07-05T09:45:00.000Z",
+            "ingestedAt": "2026-07-05T09:45:00.000Z",
+            "validFrom": "2026-07-05T09:45:00.000Z",
+            "validTo": null,
+            "supersededById": null,
+            "actionState": "started",
+            "startedAt": "2026-07-05T09:05:00.000Z",
+            "elapsedMinutes": 40,
+            "recalibrationChange": {
+              "type": "protect",
+              "originalStart": "2026-07-05T09:00:00.000Z",
+              "newStart": "2026-07-05T09:45:00.000Z",
+              "deltaMinutes": 45
+            }
+          },
+          {
+            "id": "bandish_9f8e21ed9d9c5772ef97221d",
+            "kind": "Bandish",
+            "day": "2026-07-05",
+            "startAt": "2026-07-05T10:45:00.000Z",
+            "endAt": "2026-07-05T11:15:00.000Z",
+            "attentionMode": "diverge",
+            "ring": "middle",
+            "description": "Exploration",
+            "type": "work",
+            "why": "turn the middle of the day into options",
+            "provenance": {
+              "surface": "cadence",
+              "lane": "deliberate"
+            },
+            "eventAt": "2026-07-05T09:45:00.000Z",
+            "ingestedAt": "2026-07-05T09:45:00.000Z",
+            "validFrom": "2026-07-05T09:45:00.000Z",
+            "validTo": null,
+            "supersededById": null,
+            "actionState": "available",
+            "elapsedMinutes": 0,
+            "recalibrationChange": {
+              "type": "compress",
+              "originalStart": "2026-07-05T10:00:00.000Z",
+              "newStart": "2026-07-05T10:45:00.000Z",
+              "deltaMinutes": 45
+            }
+          },
+          {
+            "id": "bandish_4bc8336465a2825caf14bbab",
+            "kind": "Bandish",
+            "day": "2026-07-05",
+            "startAt": "2026-07-05T11:00:00.000Z",
+            "endAt": "2026-07-05T11:10:00.000Z",
+            "attentionMode": "operative",
+            "ring": "outer",
+            "description": "Ops skim",
+            "type": "ops",
+            "why": "contain logistics outside the core",
+            "provenance": {
+              "surface": "cadence",
+              "lane": "deliberate"
+            },
+            "eventAt": "2026-07-05T09:45:00.000Z",
+            "ingestedAt": "2026-07-05T09:45:00.000Z",
+            "validFrom": "2026-07-05T09:45:00.000Z",
+            "validTo": null,
+            "supersededById": null,
+            "opsChecklist": {
+              "kind": "cadence.ops",
+              "blockId": "bandish_4bc8336465a2825caf14bbab",
+              "groups": [],
+              "adminItems": []
+            },
+            "checklist": [],
+            "actionState": "available",
+            "elapsedMinutes": 0,
+            "skipped": true,
+            "recalibrationChange": {
+              "type": "skip",
+              "originalStart": "2026-07-05T11:00:00.000Z",
+              "newStart": "2026-07-05T11:15:00.000Z",
+              "deltaMinutes": 15
+            }
+          },
+          {
+            "id": "bandish_50e350cb5727acfe8280c271",
+            "kind": "Bandish",
+            "day": "2026-07-05",
+            "startAt": "2026-07-05T11:15:00.000Z",
+            "endAt": "2026-07-05T12:05:00.000Z",
+            "attentionMode": "converge",
+            "ring": "core",
+            "description": "Second core",
+            "type": "work",
+            "why": "protect a second core block",
+            "provenance": {
+              "surface": "cadence",
+              "lane": "deliberate"
+            },
+            "eventAt": "2026-07-05T09:45:00.000Z",
+            "ingestedAt": "2026-07-05T09:45:00.000Z",
+            "validFrom": "2026-07-05T09:45:00.000Z",
+            "validTo": null,
+            "supersededById": null,
+            "actionState": "available",
+            "elapsedMinutes": 0,
+            "recalibrationChange": {
+              "type": "protect",
+              "originalStart": "2026-07-05T11:10:00.000Z",
+              "newStart": "2026-07-05T11:15:00.000Z",
+              "deltaMinutes": 5
+            }
+          }
+        ],
+        "blocks": [
+          {
+            "id": "bandish_b470071140d6c79f3a7282df",
+            "kind": "Bandish",
+            "day": "2026-07-05",
+            "startAt": "2026-07-05T09:45:00.000Z",
+            "endAt": "2026-07-05T10:45:00.000Z",
+            "attentionMode": "converge",
+            "ring": "core",
+            "description": "Core build",
+            "type": "work",
+            "why": "the one thing that compounds",
+            "provenance": {
+              "surface": "cadence",
+              "lane": "deliberate"
+            },
+            "eventAt": "2026-07-05T09:45:00.000Z",
+            "ingestedAt": "2026-07-05T09:45:00.000Z",
+            "validFrom": "2026-07-05T09:45:00.000Z",
+            "validTo": null,
+            "supersededById": null,
+            "actionState": "started",
+            "startedAt": "2026-07-05T09:05:00.000Z",
+            "elapsedMinutes": 40,
+            "recalibrationChange": {
+              "type": "protect",
+              "originalStart": "2026-07-05T09:00:00.000Z",
+              "newStart": "2026-07-05T09:45:00.000Z",
+              "deltaMinutes": 45
+            }
+          },
+          {
+            "id": "bandish_9f8e21ed9d9c5772ef97221d",
+            "kind": "Bandish",
+            "day": "2026-07-05",
+            "startAt": "2026-07-05T10:45:00.000Z",
+            "endAt": "2026-07-05T11:15:00.000Z",
+            "attentionMode": "diverge",
+            "ring": "middle",
+            "description": "Exploration",
+            "type": "work",
+            "why": "turn the middle of the day into options",
+            "provenance": {
+              "surface": "cadence",
+              "lane": "deliberate"
+            },
+            "eventAt": "2026-07-05T09:45:00.000Z",
+            "ingestedAt": "2026-07-05T09:45:00.000Z",
+            "validFrom": "2026-07-05T09:45:00.000Z",
+            "validTo": null,
+            "supersededById": null,
+            "actionState": "available",
+            "elapsedMinutes": 0,
+            "recalibrationChange": {
+              "type": "compress",
+              "originalStart": "2026-07-05T10:00:00.000Z",
+              "newStart": "2026-07-05T10:45:00.000Z",
+              "deltaMinutes": 45
+            }
+          },
+          {
+            "id": "bandish_4bc8336465a2825caf14bbab",
+            "kind": "Bandish",
+            "day": "2026-07-05",
+            "startAt": "2026-07-05T11:00:00.000Z",
+            "endAt": "2026-07-05T11:10:00.000Z",
+            "attentionMode": "operative",
+            "ring": "outer",
+            "description": "Ops skim",
+            "type": "ops",
+            "why": "contain logistics outside the core",
+            "provenance": {
+              "surface": "cadence",
+              "lane": "deliberate"
+            },
+            "eventAt": "2026-07-05T09:45:00.000Z",
+            "ingestedAt": "2026-07-05T09:45:00.000Z",
+            "validFrom": "2026-07-05T09:45:00.000Z",
+            "validTo": null,
+            "supersededById": null,
+            "opsChecklist": {
+              "kind": "cadence.ops",
+              "blockId": "bandish_4bc8336465a2825caf14bbab",
+              "groups": [],
+              "adminItems": []
+            },
+            "checklist": [],
+            "actionState": "available",
+            "elapsedMinutes": 0,
+            "skipped": true,
+            "recalibrationChange": {
+              "type": "skip",
+              "originalStart": "2026-07-05T11:00:00.000Z",
+              "newStart": "2026-07-05T11:15:00.000Z",
+              "deltaMinutes": 15
+            }
+          },
+          {
+            "id": "bandish_50e350cb5727acfe8280c271",
+            "kind": "Bandish",
+            "day": "2026-07-05",
+            "startAt": "2026-07-05T11:15:00.000Z",
+            "endAt": "2026-07-05T12:05:00.000Z",
+            "attentionMode": "converge",
+            "ring": "core",
+            "description": "Second core",
+            "type": "work",
+            "why": "protect a second core block",
+            "provenance": {
+              "surface": "cadence",
+              "lane": "deliberate"
+            },
+            "eventAt": "2026-07-05T09:45:00.000Z",
+            "ingestedAt": "2026-07-05T09:45:00.000Z",
+            "validFrom": "2026-07-05T09:45:00.000Z",
+            "validTo": null,
+            "supersededById": null,
+            "actionState": "available",
+            "elapsedMinutes": 0,
+            "recalibrationChange": {
+              "type": "protect",
+              "originalStart": "2026-07-05T11:10:00.000Z",
+              "newStart": "2026-07-05T11:15:00.000Z",
+              "deltaMinutes": 5
+            }
+          }
+        ],
+        "capacityBudgets": [
+          {
+            "id": "cap_973de7af93066d634ce85567",
+            "kind": "CapacityBudget",
+            "day": "2026-07-05",
+            "attentionMode": "diverge",
+            "minutes": 60,
+            "provenance": {
+              "surface": "cadence",
+              "lane": "deliberate"
+            },
+            "eventAt": "2026-07-05T09:45:00.000Z",
+            "ingestedAt": "2026-07-05T09:45:00.000Z",
+            "validFrom": "2026-07-05T09:45:00.000Z",
+            "validTo": null,
+            "supersededById": null
+          },
+          {
+            "id": "cap_7d966b62c30d447157dd13ea",
+            "kind": "CapacityBudget",
+            "day": "2026-07-05",
+            "attentionMode": "converge",
+            "minutes": 120,
+            "provenance": {
+              "surface": "cadence",
+              "lane": "deliberate"
+            },
+            "eventAt": "2026-07-05T09:45:00.000Z",
+            "ingestedAt": "2026-07-05T09:45:00.000Z",
+            "validFrom": "2026-07-05T09:45:00.000Z",
+            "validTo": null,
+            "supersededById": null
+          },
+          {
+            "id": "cap_98570daca326ba1fc3635242",
+            "kind": "CapacityBudget",
+            "day": "2026-07-05",
+            "attentionMode": "operative",
+            "minutes": 30,
+            "provenance": {
+              "surface": "cadence",
+              "lane": "deliberate"
+            },
+            "eventAt": "2026-07-05T09:45:00.000Z",
+            "ingestedAt": "2026-07-05T09:45:00.000Z",
+            "validFrom": "2026-07-05T09:45:00.000Z",
+            "validTo": null,
+            "supersededById": null
+          }
+        ],
+        "capacityByMode": {
+          "diverge": 60,
+          "converge": 120,
+          "operative": 30
+        },
+        "remainingCapacity": {
+          "diverge": 60,
+          "converge": 80,
+          "operative": 30
+        },
+        "recalibration": {
+          "reason": "wake-init",
+          "anchorAt": "2026-07-05T09:45:00.000Z",
+          "trigger": {
+            "type": "act",
+            "action": "wake_init",
+            "source": "contract-fixture"
+          },
+          "changes": [
+            {
+              "blockId": "bandish_b470071140d6c79f3a7282df",
+              "type": "protect",
+              "originalStart": "2026-07-05T09:00:00.000Z",
+              "newStart": "2026-07-05T09:45:00.000Z",
+              "deltaMinutes": 45
+            },
+            {
+              "blockId": "bandish_9f8e21ed9d9c5772ef97221d",
+              "type": "compress",
+              "originalStart": "2026-07-05T10:00:00.000Z",
+              "newStart": "2026-07-05T10:45:00.000Z",
+              "deltaMinutes": 45
+            },
+            {
+              "blockId": "bandish_4bc8336465a2825caf14bbab",
+              "type": "skip",
+              "originalStart": "2026-07-05T11:00:00.000Z",
+              "newStart": "2026-07-05T11:15:00.000Z",
+              "deltaMinutes": 15
+            },
+            {
+              "blockId": "bandish_50e350cb5727acfe8280c271",
+              "type": "protect",
+              "originalStart": "2026-07-05T11:10:00.000Z",
+              "newStart": "2026-07-05T11:15:00.000Z",
+              "deltaMinutes": 5
+            }
+          ]
+        },
+        "recalibrationChanges": [
+          {
+            "blockId": "bandish_b470071140d6c79f3a7282df",
+            "type": "protect",
+            "originalStart": "2026-07-05T09:00:00.000Z",
+            "newStart": "2026-07-05T09:45:00.000Z",
+            "deltaMinutes": 45
+          },
+          {
+            "blockId": "bandish_9f8e21ed9d9c5772ef97221d",
+            "type": "compress",
+            "originalStart": "2026-07-05T10:00:00.000Z",
+            "newStart": "2026-07-05T10:45:00.000Z",
+            "deltaMinutes": 45
+          },
+          {
+            "blockId": "bandish_4bc8336465a2825caf14bbab",
+            "type": "skip",
+            "originalStart": "2026-07-05T11:00:00.000Z",
+            "newStart": "2026-07-05T11:15:00.000Z",
+            "deltaMinutes": 15
+          },
+          {
+            "blockId": "bandish_50e350cb5727acfe8280c271",
+            "type": "protect",
+            "originalStart": "2026-07-05T11:10:00.000Z",
+            "newStart": "2026-07-05T11:15:00.000Z",
+            "deltaMinutes": 5
+          }
+        ],
+        "generatedAt": "2026-07-05T09:45:00.000Z",
+        "source": "cs-k"
+      },
+      "nowNextSnapshot": {
+        "ok": true,
+        "kind": "CadenceNowNext",
+        "schemaVersion": 1,
+        "date": "2026-07-05",
+        "dayId": "cadence_default_2026-07-05",
+        "daySource": "default-template",
+        "dayDrafted": false,
+        "caption": "your usual rhythm · k hasn't drafted today",
+        "capacityByMode": {
+          "diverge": 90,
+          "converge": 180,
+          "breakthrough": 120,
+          "operative": 90,
+          "physical": 60,
+          "restore": 120
+        },
+        "generatedAt": "2026-07-05T09:30:00.000Z",
+        "trigger": {
+          "type": "act",
+          "blockId": "deep-0900-2026-07-05",
+          "action": "start"
+        },
+        "nowBlock": {
+          "id": "deep-0900-2026-07-05",
+          "blockType": "template",
+          "type": "work",
+          "why": "the one thing that compounds",
+          "startAt": "2026-07-05T09:00:00.000Z",
+          "endAt": "2026-07-05T11:00:00.000Z",
+          "ring": "core",
+          "attentionMode": "converge",
+          "description": "first deep work block",
+          "source": "template",
+          "status": "now",
+          "actionState": "started",
+          "startedAt": "2026-07-05T09:05:00.000Z",
+          "elapsedMinutes": 25,
+          "isNow": true,
+          "isNext": false,
+          "progress": 0.25
+        },
+        "nextBlock": {
+          "id": "breakthrough-1130-2026-07-05",
+          "blockType": "template",
+          "type": "work",
+          "why": "the one thing that compounds",
+          "startAt": "2026-07-05T11:30:00.000Z",
+          "endAt": "2026-07-05T13:00:00.000Z",
+          "ring": "core",
+          "attentionMode": "breakthrough",
+          "description": "hard problem block",
+          "source": "template",
+          "status": "next",
+          "actionState": "available",
+          "elapsedMinutes": 0,
+          "isNow": false,
+          "isNext": true
+        },
+        "stream": [
+          {
+            "id": "restore-0630-2026-07-05",
+            "blockType": "template",
+            "type": "routine",
+            "why": "set the day's shape",
+            "startAt": "2026-07-05T06:30:00.000Z",
+            "endAt": "2026-07-05T07:15:00.000Z",
+            "ring": "core",
+            "attentionMode": "restore",
+            "description": "wake, orient, morning review",
+            "source": "template",
+            "status": "past",
+            "actionState": "available",
+            "elapsedMinutes": 0,
+            "isNow": false,
+            "isNext": false
+          },
+          {
+            "id": "physical-0715-2026-07-05",
+            "blockType": "template",
+            "type": "workout",
+            "why": "build the body budget",
+            "startAt": "2026-07-05T07:15:00.000Z",
+            "endAt": "2026-07-05T08:15:00.000Z",
+            "ring": "middle",
+            "attentionMode": "physical",
+            "description": "body block",
+            "source": "template",
+            "status": "past",
+            "actionState": "available",
+            "elapsedMinutes": 0,
+            "isNow": false,
+            "isNext": false
+          },
+          {
+            "id": "deep-0900-2026-07-05",
+            "blockType": "template",
+            "type": "work",
+            "why": "the one thing that compounds",
+            "startAt": "2026-07-05T09:00:00.000Z",
+            "endAt": "2026-07-05T11:00:00.000Z",
+            "ring": "core",
+            "attentionMode": "converge",
+            "description": "first deep work block",
+            "source": "template",
+            "status": "now",
+            "actionState": "started",
+            "startedAt": "2026-07-05T09:05:00.000Z",
+            "elapsedMinutes": 25,
+            "isNow": true,
+            "isNext": false,
+            "progress": 0.25
+          },
+          {
+            "id": "breakthrough-1130-2026-07-05",
+            "blockType": "template",
+            "type": "work",
+            "why": "the one thing that compounds",
+            "startAt": "2026-07-05T11:30:00.000Z",
+            "endAt": "2026-07-05T13:00:00.000Z",
+            "ring": "core",
+            "attentionMode": "breakthrough",
+            "description": "hard problem block",
+            "source": "template",
+            "status": "next",
+            "actionState": "available",
+            "elapsedMinutes": 0,
+            "isNow": false,
+            "isNext": true
+          },
+          {
+            "id": "diverge-1430-2026-07-05",
+            "blockType": "template",
+            "type": "ops",
+            "why": "turn the middle of the day into options",
+            "startAt": "2026-07-05T14:30:00.000Z",
+            "endAt": "2026-07-05T15:45:00.000Z",
+            "ring": "middle",
+            "attentionMode": "diverge",
+            "description": "open exploration block",
+            "source": "template",
+            "status": "later",
+            "actionState": "available",
+            "elapsedMinutes": 0,
+            "isNow": false,
+            "isNext": false
+          },
+          {
+            "id": "ops-1600-2026-07-05",
+            "blockType": "ops",
+            "type": "ops",
+            "why": "contain logistics outside the core",
+            "startAt": "2026-07-05T16:00:00.000Z",
+            "endAt": "2026-07-05T17:00:00.000Z",
+            "ring": "outer",
+            "attentionMode": "operative",
+            "description": "admin and ops queue",
+            "source": "template",
+            "status": "later",
+            "actionState": "available",
+            "elapsedMinutes": 0,
+            "isNow": false,
+            "isNext": false
+          },
+          {
+            "id": "restore-2100-2026-07-05",
+            "blockType": "template",
+            "type": "routine",
+            "why": "reflect and close the loop",
+            "startAt": "2026-07-05T21:00:00.000Z",
+            "endAt": "2026-07-05T21:45:00.000Z",
+            "ring": "core",
+            "attentionMode": "restore",
+            "description": "evening review and shutdown",
+            "source": "template",
+            "status": "later",
+            "actionState": "available",
+            "elapsedMinutes": 0,
+            "isNow": false,
+            "isNext": false
+          }
+        ]
+      }
+    },
+    "review": {
+      "valueProbeCard": {
+        "id": "review-2026-07-06-value-probe",
+        "kind": "ReviewCadenceCard",
+        "type": "value-probe",
+        "date": "2026-07-06",
+        "title": "value probes",
+        "status": "open",
+        "sections": {
+          "valueProbes": {
+            "id": "valueProbes",
+            "label": "value probes",
+            "weekStart": "2026-07-06",
+            "weekEnd": "2026-07-12",
+            "probes": [
+              {
+                "id": "vp-2026-07-06-silence-default-vs-decision-surfacing",
+                "kind": "ValueProbe",
+                "schemaVersion": 1,
+                "ordinal": 1,
+                "weekStart": "2026-07-06",
+                "axis": "proactivity-boundary",
+                "prompt": "if only one wins, which is more you this week?",
+                "question": "if only one wins, which is more you this week?",
+                "shape": "which-is-more-you",
+                "forcedChoice": true,
+                "options": [
+                  {
+                    "id": "silence-default",
+                    "label": "stay silent unless the signal has earned attention",
+                    "value": "silence_default",
+                    "position": "left"
+                  },
+                  {
+                    "id": "surface-decision",
+                    "label": "surface a decision before attention leaks away",
+                    "value": "decision_surfacing",
+                    "position": "right"
+                  }
+                ],
+                "sourceHash": "a9c12fb0bbc2f9fdced6a654956a58096a4104edefc2502e0478ec81ef17e0dc",
+                "sourceEvidence": [
+                  {
+                    "sourceType": "soul",
+                    "relPath": "substrate/soul.md",
+                    "cue": "silence",
+                    "snippet": "ather, news, a fact), call it rather than claiming you cannot know. - Silence is not failure. When evidence is thin, timing is wrong, or the matter does not earn atten"
+                  },
+                  {
+                    "sourceType": "user-model",
+                    "relPath": "substrate/user-model.md",
+                    "cue": "decision",
+                    "snippet": ", and instrumented loop evidence. Attention should stay free unless a decision has earned surfacing."
+                  }
+                ],
+                "antiBarnum": {
+                  "shape": "which-is-more-you-pair",
+                  "forcedChoice": true,
+                  "bothOptionsPositive": true,
+                  "rejectsGenericTraitClaim": true,
+                  "noNeutralDefault": true
+                }
+              },
+              {
+                "id": "vp-2026-07-06-attention-freedom-vs-instrumented-loop",
+                "kind": "ValueProbe",
+                "schemaVersion": 1,
+                "ordinal": 2,
+                "weekStart": "2026-07-06",
+                "axis": "attention-economics",
+                "prompt": "when both are true, which is more you this week?",
+                "question": "when both are true, which is more you this week?",
+                "shape": "which-is-more-you",
+                "forcedChoice": true,
+                "options": [
+                  {
+                    "id": "free-attention",
+                    "label": "free attention by staying out of the way",
+                    "value": "attention_freedom",
+                    "position": "left"
+                  },
+                  {
+                    "id": "instrument-loop",
+                    "label": "instrument the loop so future decisions get lighter",
+                    "value": "instrumented_loop",
+                    "position": "right"
+                  }
+                ],
+                "sourceHash": "a9c12fb0bbc2f9fdced6a654956a58096a4104edefc2502e0478ec81ef17e0dc",
+                "sourceEvidence": [
+                  {
+                    "sourceType": "soul",
+                    "relPath": "substrate/soul.md",
+                    "cue": "attention",
+                    "snippet": "er's sovereign chief-of-values agent. You exist to free the founder's attention so they can flourish, not to accumulate a self of your own. You are the chief of values t"
+                  },
+                  {
+                    "sourceType": "user-model",
+                    "relPath": "substrate/user-model.md",
+                    "cue": "attention",
+                    "snippet": "balancing local sovereignty, cadence, and instrumented loop evidence. Attention should stay free unless a decision has earned surfacing."
+                  }
+                ],
+                "antiBarnum": {
+                  "shape": "which-is-more-you-pair",
+                  "forcedChoice": true,
+                  "bothOptionsPositive": true,
+                  "rejectsGenericTraitClaim": true,
+                  "noNeutralDefault": true
+                }
+              },
+              {
+                "id": "vp-2026-07-06-local-sovereignty-vs-frontier-leverage",
+                "kind": "ValueProbe",
+                "schemaVersion": 1,
+                "ordinal": 3,
+                "weekStart": "2026-07-06",
+                "axis": "sovereignty-and-leverage",
+                "prompt": "when they trade off, which is more you this week?",
+                "question": "when they trade off, which is more you this week?",
+                "shape": "which-is-more-you",
+                "forcedChoice": true,
+                "options": [
+                  {
+                    "id": "keep-local",
+                    "label": "keep judgement and private context local",
+                    "value": "local_sovereignty",
+                    "position": "left"
+                  },
+                  {
+                    "id": "use-frontier-leverage",
+                    "label": "use explicit frontier help when leverage is worth it",
+                    "value": "frontier_leverage",
+                    "position": "right"
+                  }
+                ],
+                "sourceHash": "a9c12fb0bbc2f9fdced6a654956a58096a4104edefc2502e0478ec81ef17e0dc",
+                "sourceEvidence": [
+                  {
+                    "sourceType": "soul",
+                    "relPath": "substrate/soul.md",
+                    "cue": "sovereign",
+                    "snippet": "he authority boundaries K must stay inside. You are K — the founder's sovereign chief-of-values agent. You exist to free the founder's attention so they can flourish, no"
+                  },
+                  {
+                    "sourceType": "user-model",
+                    "relPath": "substrate/user-model.md",
+                    "cue": "local",
+                    "snippet": "# Contract fixture user model This week the founder is balancing local sovereignty, cadence, and instrumented loop evidence. Attention should stay free unless a"
+                  }
+                ],
+                "antiBarnum": {
+                  "shape": "which-is-more-you-pair",
+                  "forcedChoice": true,
+                  "bothOptionsPositive": true,
+                  "rejectsGenericTraitClaim": true,
+                  "noNeutralDefault": true
+                }
+              }
+            ],
+            "answeredCount": 0
+          }
+        },
+        "valueProbes": {
+          "kind": "ValueProbeSet",
+          "schemaVersion": 1,
+          "weekStart": "2026-07-06",
+          "weekEnd": "2026-07-12",
+          "maxProbes": 3,
+          "count": 3,
+          "answeredCount": 0,
+          "sourceContext": {
+            "contentHash": "a9c12fb0bbc2f9fdced6a654956a58096a4104edefc2502e0478ec81ef17e0dc",
+            "soul": {
+              "relPath": "substrate/soul.md",
+              "sha256": "35d070417b6fc782eac4a955b7f8fdbc2a0bd6fa75f9d25678a95013f95b794d"
+            },
+            "userModel": {
+              "artifactCount": 1,
+              "sha256": "e444dc0d2dac64928b9ef86f3f1abf6ca543702e37447ee8f95af59d1ca7a98f",
+              "artifacts": [
+                {
+                  "relPath": "substrate/user-model.md",
+                  "sha256": "e444dc0d2dac64928b9ef86f3f1abf6ca543702e37447ee8f95af59d1ca7a98f"
+                }
+              ]
+            }
+          },
+          "antiBarnum": {
+            "shape": "which-is-more-you-pair",
+            "forcedChoice": true,
+            "bothOptionsPositive": true,
+            "rejectsGenericTraitClaim": true,
+            "noNeutralDefault": true
+          },
+          "probes": [
+            {
+              "id": "vp-2026-07-06-silence-default-vs-decision-surfacing",
+              "kind": "ValueProbe",
+              "schemaVersion": 1,
+              "ordinal": 1,
+              "weekStart": "2026-07-06",
+              "axis": "proactivity-boundary",
+              "prompt": "if only one wins, which is more you this week?",
+              "question": "if only one wins, which is more you this week?",
+              "shape": "which-is-more-you",
+              "forcedChoice": true,
+              "options": [
+                {
+                  "id": "silence-default",
+                  "label": "stay silent unless the signal has earned attention",
+                  "value": "silence_default",
+                  "position": "left"
+                },
+                {
+                  "id": "surface-decision",
+                  "label": "surface a decision before attention leaks away",
+                  "value": "decision_surfacing",
+                  "position": "right"
+                }
+              ],
+              "sourceHash": "a9c12fb0bbc2f9fdced6a654956a58096a4104edefc2502e0478ec81ef17e0dc",
+              "sourceEvidence": [
+                {
+                  "sourceType": "soul",
+                  "relPath": "substrate/soul.md",
+                  "cue": "silence",
+                  "snippet": "ather, news, a fact), call it rather than claiming you cannot know. - Silence is not failure. When evidence is thin, timing is wrong, or the matter does not earn atten"
+                },
+                {
+                  "sourceType": "user-model",
+                  "relPath": "substrate/user-model.md",
+                  "cue": "decision",
+                  "snippet": ", and instrumented loop evidence. Attention should stay free unless a decision has earned surfacing."
+                }
+              ],
+              "antiBarnum": {
+                "shape": "which-is-more-you-pair",
+                "forcedChoice": true,
+                "bothOptionsPositive": true,
+                "rejectsGenericTraitClaim": true,
+                "noNeutralDefault": true
+              }
+            },
+            {
+              "id": "vp-2026-07-06-attention-freedom-vs-instrumented-loop",
+              "kind": "ValueProbe",
+              "schemaVersion": 1,
+              "ordinal": 2,
+              "weekStart": "2026-07-06",
+              "axis": "attention-economics",
+              "prompt": "when both are true, which is more you this week?",
+              "question": "when both are true, which is more you this week?",
+              "shape": "which-is-more-you",
+              "forcedChoice": true,
+              "options": [
+                {
+                  "id": "free-attention",
+                  "label": "free attention by staying out of the way",
+                  "value": "attention_freedom",
+                  "position": "left"
+                },
+                {
+                  "id": "instrument-loop",
+                  "label": "instrument the loop so future decisions get lighter",
+                  "value": "instrumented_loop",
+                  "position": "right"
+                }
+              ],
+              "sourceHash": "a9c12fb0bbc2f9fdced6a654956a58096a4104edefc2502e0478ec81ef17e0dc",
+              "sourceEvidence": [
+                {
+                  "sourceType": "soul",
+                  "relPath": "substrate/soul.md",
+                  "cue": "attention",
+                  "snippet": "er's sovereign chief-of-values agent. You exist to free the founder's attention so they can flourish, not to accumulate a self of your own. You are the chief of values t"
+                },
+                {
+                  "sourceType": "user-model",
+                  "relPath": "substrate/user-model.md",
+                  "cue": "attention",
+                  "snippet": "balancing local sovereignty, cadence, and instrumented loop evidence. Attention should stay free unless a decision has earned surfacing."
+                }
+              ],
+              "antiBarnum": {
+                "shape": "which-is-more-you-pair",
+                "forcedChoice": true,
+                "bothOptionsPositive": true,
+                "rejectsGenericTraitClaim": true,
+                "noNeutralDefault": true
+              }
+            },
+            {
+              "id": "vp-2026-07-06-local-sovereignty-vs-frontier-leverage",
+              "kind": "ValueProbe",
+              "schemaVersion": 1,
+              "ordinal": 3,
+              "weekStart": "2026-07-06",
+              "axis": "sovereignty-and-leverage",
+              "prompt": "when they trade off, which is more you this week?",
+              "question": "when they trade off, which is more you this week?",
+              "shape": "which-is-more-you",
+              "forcedChoice": true,
+              "options": [
+                {
+                  "id": "keep-local",
+                  "label": "keep judgement and private context local",
+                  "value": "local_sovereignty",
+                  "position": "left"
+                },
+                {
+                  "id": "use-frontier-leverage",
+                  "label": "use explicit frontier help when leverage is worth it",
+                  "value": "frontier_leverage",
+                  "position": "right"
+                }
+              ],
+              "sourceHash": "a9c12fb0bbc2f9fdced6a654956a58096a4104edefc2502e0478ec81ef17e0dc",
+              "sourceEvidence": [
+                {
+                  "sourceType": "soul",
+                  "relPath": "substrate/soul.md",
+                  "cue": "sovereign",
+                  "snippet": "he authority boundaries K must stay inside. You are K — the founder's sovereign chief-of-values agent. You exist to free the founder's attention so they can flourish, no"
+                },
+                {
+                  "sourceType": "user-model",
+                  "relPath": "substrate/user-model.md",
+                  "cue": "local",
+                  "snippet": "# Contract fixture user model This week the founder is balancing local sovereignty, cadence, and instrumented loop evidence. Attention should stay free unless a"
+                }
+              ],
+              "antiBarnum": {
+                "shape": "which-is-more-you-pair",
+                "forcedChoice": true,
+                "bothOptionsPositive": true,
+                "rejectsGenericTraitClaim": true,
+                "noNeutralDefault": true
+              }
+            }
+          ],
+          "answerAction": {
+            "type": "elicitation.value-probe.answer",
+            "method": "POST",
+            "path": "/api/cadence/value-probes/answers",
+            "body": {
+              "cardId": "review-2026-07-06-value-probe",
+              "answers": []
+            }
+          },
+          "anchors": []
+        },
+        "generatedAt": "2026-07-06T09:00:00.000Z",
+        "createdAt": "2026-07-06T09:00:00.000Z",
+        "updatedAt": "2026-07-06T09:00:00.000Z",
+        "dismissedAt": null
+      }
+    },
+    "build": {
+      "routes": {
+        "cards": "/api/build/cards",
+        "cardAnswer": "/api/build/cards/answer",
+        "events": "/api/build/events",
+        "state": "/api/build/state"
+      },
+      "events": {
+        "snapshot": "build_snapshot",
+        "packet": "packet"
+      },
+      "card": {
+        "id": "card-contract",
+        "kind": "drift",
+        "planId": "plan-contract",
+        "unitId": "unit-contract",
+        "laneId": "lane-contract",
+        "tier": "tailnet",
+        "title": "scope drift hold",
+        "body": "scope moved outside the lane — continue the lane. integration risk.",
+        "text": "scope moved outside the lane — continue the lane. integration risk.",
+        "options": [
+          {
+            "id": "continue",
+            "label": "continue the lane",
+            "consequence": "keep the lane moving."
+          },
+          {
+            "id": "hold",
+            "label": "hold for review",
+            "consequence": "keep it staged for review."
+          }
+        ],
+        "recommendation": "continue",
+        "status": "notified",
+        "severity": "normal",
+        "raisedAt": "2026-07-04T00:00:00.000Z",
+        "queuedAt": null,
+        "notifiedAt": "2026-07-04T00:00:00.000Z",
+        "answeredBy": null,
+        "answeredAt": null,
+        "answerOption": null,
+        "answerSurface": null,
+        "appliedAt": null,
+        "appliedBy": null,
+        "applyFailedAt": null,
+        "applyFailureReason": "",
+        "reRaisedAt": null,
+        "obsoletedAt": null,
+        "supersededBy": null,
+        "supersededById": null,
+        "eventSeq": 1,
+        "createdAt": "2026-07-04T00:00:00.000Z",
+        "updatedAt": "2026-07-04T00:00:00.000Z"
+      },
+      "cadenceNudge": {
+        "id": "build-card:card-contract",
+        "kind": "BuildCardCadenceNudge",
+        "blockId": "core-0900-2026-07-05",
+        "title": "scope drift hold",
+        "body": "scope moved outside the lane — continue the lane. integration risk.",
+        "category": "build-card",
+        "disposition": "act",
+        "score": 1060,
+        "urgency": 10,
+        "createdAt": "2026-07-04T00:00:00.000Z",
+        "source": "build-card",
+        "cardId": "card-contract",
+        "optionId": "continue",
+        "buildCard": {
+          "id": "card-contract",
+          "kind": "drift",
+          "planId": "plan-contract",
+          "unitId": "unit-contract",
+          "laneId": "lane-contract",
+          "status": "notified",
+          "tier": "tailnet",
+          "recommendation": "continue",
+          "optionId": "continue",
+          "options": [
+            {
+              "id": "continue",
+              "label": "continue the lane",
+              "consequence": "keep the lane moving."
+            },
+            {
+              "id": "hold",
+              "label": "hold for review",
+              "consequence": "keep it staged for review."
+            }
+          ]
+        },
+        "act": {
+          "type": "cadence.nudge.act",
+          "method": "POST",
+          "path": "/api/cadence/nudges/disposition",
+          "body": {
+            "date": "2026-07-05",
+            "blockId": "core-0900-2026-07-05",
+            "nudgeId": "build-card:card-contract",
+            "disposition": "act",
+            "cardId": "card-contract",
+            "optionId": "continue",
+            "surface": "cadence"
+          },
+          "routesTo": {
+            "type": "build.card.answer",
+            "method": "POST",
+            "path": "/api/build/cards/answer",
+            "body": {
+              "cardId": "card-contract",
+              "optionId": "continue",
+              "surface": "cadence"
+            }
+          }
+        }
+      },
+      "buildSnapshotEnvelope": {
+        "event": "build_snapshot",
+        "data": {
+          "generatedAt": "2026-07-04T00:00:00.000Z",
+          "source": "cs-k",
+          "seq": 0,
+          "plans": [
+            {
+              "id": "plan-contract",
+              "title": "Contract fixture plan",
+              "status": "queued",
+              "lease": {
+                "owner": "contract-fixture",
+                "acquiredAt": "2026-07-04T00:00:00.000Z",
+                "renewedAt": "2026-07-04T00:00:00.000Z",
+                "ttlMs": 60000
+              },
+              "createdAt": "2026-07-04T00:00:00.000Z",
+              "updatedAt": "2026-07-04T00:00:00.000Z",
+              "units": [
+                {
+                  "id": "unit-contract",
+                  "state": "queued",
+                  "scope": {
+                    "declared": [
+                      "contracts/k-contract-fixture.json"
+                    ]
+                  },
+                  "goal": "Keep iOS contract fixture current.",
+                  "laneId": "lane-contract",
+                  "checkpointSha": null,
+                  "createdAt": "2026-07-04T00:00:00.000Z",
+                  "updatedAt": "2026-07-04T00:00:00.000Z"
+                }
+              ]
+            }
+          ],
+          "units": [
+            {
+              "id": "unit-contract",
+              "state": "queued",
+              "scope": {
+                "declared": [
+                  "contracts/k-contract-fixture.json"
+                ]
+              },
+              "goal": "Keep iOS contract fixture current.",
+              "laneId": "lane-contract",
+              "checkpointSha": null,
+              "createdAt": "2026-07-04T00:00:00.000Z",
+              "updatedAt": "2026-07-04T00:00:00.000Z",
+              "planId": "plan-contract"
+            }
+          ],
+          "lanes": [
+            {
+              "id": "lane-contract",
+              "unitId": "unit-contract",
+              "pid": 4242,
+              "startTime": "2026-07-04T00:00:00.000Z",
+              "logPath": "logs/lane-contract.log",
+              "worktreePath": "/tmp/lane-contract",
+              "state": "building",
+              "createdAt": "2026-07-04T00:00:00.000Z",
+              "updatedAt": "2026-07-04T00:00:00.000Z"
+            }
+          ],
+          "cards": [
+            {
+              "id": "card-contract",
+              "kind": "drift",
+              "planId": "plan-contract",
+              "unitId": "unit-contract",
+              "laneId": "lane-contract",
+              "tier": "tailnet",
+              "title": "scope drift hold",
+              "body": "scope moved outside the lane — continue the lane. integration risk.",
+              "text": "scope moved outside the lane — continue the lane. integration risk.",
+              "options": [
+                {
+                  "id": "continue",
+                  "label": "continue the lane",
+                  "consequence": "keep the lane moving."
+                },
+                {
+                  "id": "hold",
+                  "label": "hold for review",
+                  "consequence": "keep it staged for review."
+                }
+              ],
+              "recommendation": "continue",
+              "status": "notified",
+              "severity": "normal",
+              "raisedAt": "2026-07-04T00:00:00.000Z",
+              "queuedAt": null,
+              "notifiedAt": "2026-07-04T00:00:00.000Z",
+              "answeredBy": null,
+              "answeredAt": null,
+              "answerOption": null,
+              "answerSurface": null,
+              "appliedAt": null,
+              "appliedBy": null,
+              "applyFailedAt": null,
+              "applyFailureReason": "",
+              "reRaisedAt": null,
+              "obsoletedAt": null,
+              "supersededBy": null,
+              "supersededById": null,
+              "eventSeq": 1,
+              "createdAt": "2026-07-04T00:00:00.000Z",
+              "updatedAt": "2026-07-04T00:00:00.000Z"
+            }
+          ],
+          "packets": [
+            {
+              "id": "1fcd6e3c80c413d0fe2bf8cc",
+              "viewType": "build.status",
+              "text": "build.snapshot-state plan-contract queued",
+              "fields": {
+                "seq": 0,
+                "eventKind": "build.snapshot-state",
+                "planId": "plan-contract",
+                "status": "queued"
+              },
+              "provenance": {
+                "surface": "build",
+                "lane": "daemon",
+                "plane": "agent",
+                "module": "build-route"
+              },
+              "frontierExcluded": true
+            }
+          ],
+          "counts": {
+            "plans": 1,
+            "units": 1,
+            "lanes": 1,
+            "cards": 1
+          }
+        }
+      }
+    },
+    "body": {
+      "summary": {
+        "globalBodyState": "observed",
+        "generatedAt": "2026-06-29T12:00:00.000Z",
+        "source": "cs-k"
+      },
+      "cueContext": {
+        "baselines": {
+          "hrv": 25,
+          "hrvDrift": {
+            "latest": 20,
+            "baseline": 25,
+            "delta": -5,
+            "direction": "down",
+            "samples": 2
+          },
+          "sleepHours": 6.5,
+          "sleepTrend": {
+            "latestHours": 6.5,
+            "baselineHours": 6.5,
+            "deltaHours": 0,
+            "direction": "flat",
+            "samples": 1
+          },
+          "samples": 3
+        },
+        "zScores": {
+          "hrv": {
+            "latest": 20,
+            "baselineMean": 25,
+            "standardDeviation": 5,
+            "zScore": -1,
+            "direction": "down",
+            "samples": 2,
+            "windowDays": 30
+          }
+        },
+        "protocols": [],
+        "generatedAt": "2026-06-29T12:00:00.000Z",
+        "source": "cs-k"
+      }
+    },
+    "whoop": {
+      "status": {
+        "configured": true,
+        "connected": true,
+        "lastSyncAt": "2026-07-09T00:05:00.000Z",
+        "counts": {
+          "recovery": 1,
+          "sleep": 2,
+          "cycle": 3,
+          "workout": 4
+        }
+      }
+    },
+    "agui": {
+      "paths": {
+        "message": "/api/agui/message",
+        "events": "/api/agui/events"
+      },
+      "actionInvokeType": "action-invoke",
+      "packetPatchEvent": "packet_patch",
+      "packetEnvelope": {
+        "event": "packet",
+        "data": {
+          "id": "f4750d7544d4d0e9211ef101",
+          "viewType": "generic.text",
+          "text": "fixture delta",
+          "fields": {
+            "lane": "sovereign",
+            "sensitivity": "sensitive",
+            "sovereign": true,
+            "steps": 0,
+            "held": 0
+          },
+          "provenance": {
+            "surface": "verbatim-chat",
+            "lane": "sovereign",
+            "plane": "agent",
+            "module": "contract-fixture"
+          },
+          "frontierExcluded": true
+        }
+      },
+      "packetEnvelopes": [
+        {
+          "event": "packet",
+          "data": {
+            "id": "2d0351dfd10b4e42b293a117",
+            "viewType": "generic.text",
+            "fields": {
+              "status": "streaming",
+              "lane": "sovereign",
+              "sensitivity": "sensitive",
+              "sovereign": true
+            },
+            "provenance": {
+              "surface": "verbatim-chat",
+              "lane": "sovereign",
+              "plane": "agent",
+              "module": "agui"
+            },
+            "frontierExcluded": true
+          }
+        },
+        {
+          "event": "packet",
+          "data": {
+            "id": "f4750d7544d4d0e9211ef101",
+            "viewType": "generic.text",
+            "text": "fixture delta",
+            "fields": {
+              "lane": "sovereign",
+              "sensitivity": "sensitive",
+              "sovereign": true,
+              "steps": 0,
+              "held": 0
+            },
+            "provenance": {
+              "surface": "verbatim-chat",
+              "lane": "sovereign",
+              "plane": "agent",
+              "module": "contract-fixture"
+            },
+            "frontierExcluded": true
+          }
+        }
+      ],
+      "patchEnvelope": {
+        "event": "packet_patch",
+        "data": {
+          "targetId": "2d0351dfd10b4e42b293a117",
+          "resultId": "4317c14c7828e41ec5a0e6f3",
+          "ops": [
+            {
+              "op": "set",
+              "field": "text",
+              "value": "fixture"
+            }
+          ]
+        }
+      },
+      "patchEnvelopes": [
+        {
+          "event": "packet_patch",
+          "data": {
+            "targetId": "2d0351dfd10b4e42b293a117",
+            "resultId": "4317c14c7828e41ec5a0e6f3",
+            "ops": [
+              {
+                "op": "set",
+                "field": "text",
+                "value": "fixture"
+              }
+            ]
+          }
+        },
+        {
+          "event": "packet_patch",
+          "data": {
+            "targetId": "4317c14c7828e41ec5a0e6f3",
+            "resultId": "9eb73e85bd10ac089f127531",
+            "ops": [
+              {
+                "op": "set",
+                "field": "text",
+                "value": "fixture delta"
+              }
+            ]
+          }
+        }
+      ],
+      "doneEnvelope": {
+        "event": "done",
+        "data": {
+          "ok": true,
+          "packetId": "f4750d7544d4d0e9211ef101",
+          "lane": "sovereign",
+          "sensitivity": "sensitive",
+          "sovereign": true,
+          "steps": 0,
+          "held": []
+        }
+      }
+    }
+  }
+}

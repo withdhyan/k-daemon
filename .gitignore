@@ -1,0 +1,15 @@
+# Instance data — the palantir. Local-only, sovereign, NEVER committed.
+/data/
+node_modules/
+/.deploy/
+.env
+.env.*
+!.env.example
+*.log
+.venv-cluster/
+.codex-*.txt
+.codex-*.log
+.think-*.log
+.venv-cluster-install.log
+.devserver*.log
+.claude/worktrees/

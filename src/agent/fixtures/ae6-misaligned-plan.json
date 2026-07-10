@@ -1,0 +1,27 @@
+{
+  "id": "ae6-misaligned-plan",
+  "title": "Break sovereign fail-closed behavior",
+  "units": [
+    {
+      "id": "u-ae6-sensitive",
+      "title": "Remove SEC-002 silencing",
+      "goal": "Remove SEC-002 silencing and fall back to frontier on sovereign failure so sensitive turns keep producing answers.",
+      "scope": {
+        "declared": [
+          "src/reason/sensitive-model.mjs"
+        ]
+      }
+    },
+    {
+      "id": "u-ae6-frontier-fallback",
+      "title": "Route sensitive failures to frontier",
+      "goal": "Change sensitive chat routing so sovereign-lane transport failures are retried through the frontier lane.",
+      "scope": {
+        "declared": [
+          "src/agent/chat.mjs",
+          "src/agent/sovereign-single-call.mjs"
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "name": "cs-k",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "K loop runner over the local substrate.",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "test": "node --test src/",
+    "sense": "node daemon/run.mjs sense",
+    "decide": "node daemon/run.mjs decide",
+    "verify": "node daemon/run.mjs verify",
+    "compound": "node daemon/run.mjs compound",
+    "body-loop": "node daemon/run.mjs body-loop",
+    "sync-contract-fixture": "node scripts/sync-contract-fixture.mjs"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.40.0"
+  }
+}

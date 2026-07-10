@@ -1,0 +1,122 @@
+{
+  "rs4988235": {
+    "trait": "LCT lactase persistence",
+    "category": "nutrition"
+  },
+  "rs1801133": {
+    "trait": "MTHFR C677T folate metabolism",
+    "category": "nutrition"
+  },
+  "rs1801131": {
+    "trait": "MTHFR A1298C folate metabolism",
+    "category": "nutrition"
+  },
+  "rs9939609": {
+    "trait": "FTO adiposity tendency",
+    "category": "metabolism"
+  },
+  "rs1558902": {
+    "trait": "FTO adiposity tendency",
+    "category": "metabolism"
+  },
+  "rs1799883": {
+    "trait": "FABP2 fat absorption",
+    "category": "nutrition"
+  },
+  "rs73598374": {
+    "trait": "ADA sleep pressure",
+    "category": "sleep"
+  },
+  "rs4680": {
+    "trait": "COMT catecholamine recovery",
+    "category": "recovery"
+  },
+  "rs1801260": {
+    "trait": "CLOCK circadian timing",
+    "category": "sleep"
+  },
+  "rs762551": {
+    "trait": "CYP1A2 caffeine metabolism",
+    "category": "caffeine"
+  },
+  "rs4410790": {
+    "trait": "AHR caffeine response",
+    "category": "caffeine"
+  },
+  "rs2472297": {
+    "trait": "CYP1A2 coffee response",
+    "category": "caffeine"
+  },
+  "rs5751876": {
+    "trait": "ADORA2A caffeine sensitivity",
+    "category": "caffeine"
+  },
+  "rs1815739": {
+    "trait": "ACTN3 power endurance tendency",
+    "category": "recovery"
+  },
+  "rs4343": {
+    "trait": "ACE training response",
+    "category": "recovery"
+  },
+  "rs1049434": {
+    "trait": "MCT1 lactate transport",
+    "category": "recovery"
+  },
+  "rs12722": {
+    "trait": "COL5A1 tendon collagen tendency",
+    "category": "recovery"
+  },
+  "rs1800795": {
+    "trait": "IL6 inflammatory recovery",
+    "category": "recovery"
+  },
+  "rs1800796": {
+    "trait": "IL6 inflammatory response",
+    "category": "recovery"
+  },
+  "rs4880": {
+    "trait": "SOD2 oxidative stress recovery",
+    "category": "recovery"
+  },
+  "rs1050450": {
+    "trait": "GPX1 antioxidant defense",
+    "category": "recovery"
+  },
+  "rs1695": {
+    "trait": "GSTP1 oxidative stress handling",
+    "category": "recovery"
+  },
+  "rs7903146": {
+    "trait": "TCF7L2 glucose handling",
+    "category": "metabolism"
+  },
+  "rs1801282": {
+    "trait": "PPARG insulin sensitivity",
+    "category": "metabolism"
+  },
+  "rs1042713": {
+    "trait": "ADRB2 exercise response",
+    "category": "metabolism"
+  },
+  "rs1042714": {
+    "trait": "ADRB2 exercise response",
+    "category": "metabolism"
+  },
+  "rs5082": {
+    "trait": "APOA2 saturated fat response",
+    "category": "nutrition"
+  },
+  "rs174547": {
+    "trait": "FADS1 fatty acid metabolism",
+    "category": "nutrition"
+  },
+  "rs174575": {
+    "trait": "FADS2 omega-3 conversion",
+    "category": "nutrition"
+  },
+  "rs1800562": {
+    "trait": "HFE iron handling",
+    "category": "nutrition"
+  }
+}
